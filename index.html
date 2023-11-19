@@ -9,25 +9,16 @@
     body {
       margin: 0;
       padding: 0;
-      /* background-color: black; */
-      /* color: white; */
-      background-color: rgb(204, 234, 224);
+      background-color: rgb(247, 214, 239);
     }
-    .picture {
-      /* background-color: bisque; */
-    }
+    
     .back {
       text-align: center;
     }
     .h1 {
-      /* margin-top: 50px; */
-      font-size: 5rem;
-      font-family: cursive;
-      text-align: center;
-      /* color:white; */
+     font-size: 5rem;
+     text-align: center;
     }
-   
-
     .centered {
       position: absolute;
       top: 30%;
@@ -43,8 +34,6 @@
       width: 100%;
       height: 200px;
       align-items: center;
-      /* border: 2px solid black; */
-      /* background-color: beige; */
       background-color: black;
       color: white;
       text-align: center;
@@ -55,24 +44,16 @@
       border: 2px solid white;
       border-radius: 20px;
       font-size: 2rem;
-      font-family: cursive;
+  
       text-align: center;
       background-color: rgb(11, 9, 7);
       color: white;
     }
     .blog {
-      /* align-items: center; */
-      /* text-align: center; */
-      /* display: flex; */
-
-      /* justify-content: space-between; */
-      /* padding: 20px; */
       margin-left: 50px;
-      /* margin-right: 700px; */
       font-size: 1.5rem;
-      font-family: cursive;
-      /* background-color: aquamarine; */
-    }
+      margin-right: 50px;
+  }
     .quote {
       text-align: center;
       color: white;
@@ -90,23 +71,54 @@
       color:black;
       font-weight: 700;
     }
-    .fb{
-      margin-right: 300px;;
-    }
-    .fitness{
-      display: flex;
-      /* justify-content: space-around; */
-    }
+   .pic{
+    margin-top: 50px;
+   }
+   
     .fitness img{
       margin-top: 100px;
       margin-right: 30px;
       border-radius: 20px ;
     }
+    .arr{
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    .box{
+      box-sizing: border-box;
+      width: 900px;
+      border: 2px solid black;
+      border-radius: 20px;
+      text-align: center;
+      background-color: rgb(230, 222, 213);
+    }
+    .arr img{
+      box-sizing: border-box;
+      border: 2px solid black;
+      border-radius: 20px;
+      margin-bottom: 20px;
+
+    }
+    .picture{
+      position: fixed;
+      bottom: 0px;
+      z-index: -1;
+      
+    }
+    .video{
+      opacity: 0.6;
+      width: 1600px;
+    }
+   
+   
+    
+    
   </style>
   <body>
     <section class="picture">
       <div class="back">
-        <video width="100%" height="700" autoplay loop muted class="video">
+        <video width="100%" height="700" autoplay loop muted class="video" >
           <source src="nature.mp4" type="video/mp4" />
         </video>
         <div class="centered"><span id="element"></span></div>
@@ -129,25 +141,31 @@
         </b>
       </p>
     </section>
-
     <div class="blog">
-      <h1>Blogs</h1>
-      <div class="fitness">
-        <div class="fb">
-      <h2>Fitness Blogs</h2>
+       <h1 class="cen">Blogs</h1>
+    
+      <h2 class="h2">Fitness Blogs</h2>
       <h2>1.The Balanced Life with Robin Long(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+      
+      <p class="box">
         As a fitness instructor and mom of four,Robin Long's motto is "Grace
         over guilt. She offers a variety of free Pilates and barre workouts
         designed to help busy women fit at -home exercise into their regular
-        routine.<a href="https://lindywell.com/" target="_blank">The Balanced Life </a>offers far more than workout
+        routine.<a href="https://lindywell.com/" target="_blank">The Balanced Life </a> offers far more than workout
         videos,though.You will find a supportive membership community,a blog
         filled with healthy recipes and intentional living tips and targeted
         workout series to help you meet your fitness goals.
       </p>
+      <img src="img2.jpg" class="pic">
+      
+
+    </div>
 
       <h2>2.Yoga with Adriene(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+        <img src="img1.jpg" class="pic">
+      <p class="box">
         If reaping the many benefits of yoga is par of your wellness plan,
         <a href="https://yogawithadriene.com/" target="_blank">Yoga with Adriene</a>
         can help you get there.With hundreds of free yoga videos at varying
@@ -156,8 +174,11 @@
         gentle sstreching to relieve stress to kick - starting digestion after a
         big meal.
       </p>
+      
+    </div>
       <h2>3.ACE Fitness(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+      <p class="box">
         The American Council Exercise(ACE)hosts this fitness and healthy
         lifestyles blog. You don't need to be an Olympic athlete to implement
         these wellness tips! <has>The <a href="https://www.acefitness.org/resources/everyone/blog/" target="_blank">ACE Fitness </a>has accessible workouts
@@ -166,8 +187,12 @@
         your age group,this blog will encourage you to make your health a
         priority,without a gym membership.
       </p>
+      <img src="img1.jpg" class="pic">
+    </div>
       <h2>4.Run to Finish(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+        <img src="img1.jpg" class="pic">
+      <p class="box">
         The running community has its own specific fitness and nutrition
         needs,and the<a href="https://www.runtothefinish.com/"> Run to the Finishblog </a>blog is here to address
         them.Whether you've just taken up the sport or you're a marathon
@@ -175,43 +200,43 @@
         levels,including dealing with knee pain,working in strength training and
         finding the best gear to keep you safe and comfortable on your runs.
       </p>
+    </div>
       <h2>5.Born Fitness(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+      <p class="box">
         This fitness blog simplifies the sometimes confusing world of
         exercise,interviews experts in fitness and nutrition,then creates useful
         articles featuring the top tips and advice from the pros.Head to this
         sleek,easy-to-search site for science-based answers to your biggest
         fitness questions.
-      </p>
+      </p><img src="img1.jpg" class="pic">
     </div>
-    <div>
-      <img src="img2.jpg">
-      <img src="img1.jpg">
-      <img src="img2.jpg">
-      <img src="img1.jpg">
-      <img src="img2.jpg">
-      <img src="img1.jpg"></div>
-    </div>
+
       <h2>Nutrition Blogs</h2>
       <h2>1.Running on Real Food(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+        <img src="img1.jpg" class="pic">
+      <p class="box">
         This plant-based food blog is not just for vegans!Here you will find
         recipes designed to fuel your body with whole foods without sacrificing
         flavour.Whether you tickle your taste buds with No-Bake Brownie Bites or
-        vegan Black-Bean<a href="https://runningonrealfood.com/" target="_blank">Running on Real Food</a>has the simple recipes you
+        vegan Black-Bean <a href="https://runningonrealfood.com/" target="_blank">Running on Real Food</a> has the simple recipes you
         need to create healthy and delicious meals at home.
-      </p>
+      </p></div>
       <h2>2.Nutrition Stripped(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+      <p class="box">
         After migraines and lethargy led her to rock buttom,dietician and
         nutrritionist Mckel Hill finally found her caling:the world of
         nutrition.She launched<a href="https://nutritionstripped.com/" target="_blank">Nutrition Stripped </a>as a way to encourage
         readers to experience their bodies as they were meant to function.She
         does this through lifestyles articles,recipes , interviews and other
         handy esources.
-      </p>
+      </p><img src="img1.jpg" class="pic"></div>
       <h2>3.Fit Foodie Finds(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+        <img src="img1.jpg" class="pic">
+      <p class="box">
         Lee Funke,founder of <a href="https://fitfoodiefinds.com/" target="_blank">Fit Foodie Finds</a>leads her followers in
         finding balanced,healthy recipes without labelling foods "bad" or
         "off-limits." This site is a great resources for nutritious recipes that
@@ -220,28 +245,32 @@
         week.Funke also writes openy about her struggle with depression and
         anxiety and the wellness strategies she uses to prioritize her mental
         health.
-      </p>
+      </p></div>
       <h2>4.FWDfuel(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+      <p class="box">
         This unique nutrition blog is geared toward helping athletes and people
         who live active lifestyles.<a href="https://www.fwdfuel.com/" target="_blank">FWDfuel</a>features recipes and advices
         for dietary changes to avoid fatigue and inflammation,improve digestion
         and identify food sensitivities--all while maintaining the energy you
         need to stay active.FWDfuel is written by nutrition experts,including
         one who currently works the Cleveland Cavaliers!
-      </p>
+      </p><img src="img1.jpg" class="pic"></div>
       <h2>5.The Roasted Root(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+        <img src="img1.jpg" class="pic">
+      <p class="box">
         Blogger julia Mueller sees food as medicine,and she thinks you
         should,too!<a href="https://www.theroastedroot.net/" target="_blank">The Roasted Root</a>is home to countless recipes created
         to reduce inflammation and prevent illness.You can'tgo wrong with
         goodies like Paleo Espresso Chocolate Chunk Cookies or 30-Minute Thai
         Basil Chicken.If you want a diet that leads to a holistically healthy
         body,this is the place to start.
-      </p>
+      </p></div>
       <h2>Mental health and mindfulnes blogs</h2>
       <h2>1.Dear Therapist(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+      <p class="box">
         This weekly Atlantic column is hosted by licensed marriage and fimily
         therapist Lori Gottlieb.At <a href="https://www.theatlantic.com/projects/dear-therapist/" target="_blank">Dear Therapist</a>,ypu will find answer
         to questions from real readers,from the relatable("I can't stand my
@@ -249,9 +278,12 @@
         coworker.")Gottlieb tackles them all with empathy,compassion and
         honesty--and her responses have takeaways that anyone can use to improve
         their own mental and emotional well-being.
-      </p>
+      </p><img src="img1.jpg"></div>
       <h2>2.Pick the Brain(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+        <img src="img1.jpg" class="pic">
+      <p class="box">
+        
         With Keywords like motivations,productivity,health and
         self-improvement,you can't go wrong with this websites.
         <a href="https://www.pickthebrain.com/blog/" target="_blank">Pick the Brain</a>  
@@ -259,27 +291,31 @@
         psychology and self-education,taking healthy living to the next
         level.You will find articles sharing meditation techniques and tricks
         for using exercise to improve your mental health.
-      </p>
+      </p></div>
       <h2>3.NAMI blog(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+      <p class="box">
         As the official blog of the National Alliance on Mental Illness,the
         <b>NAMI blog</b>offers evidence-based advice surroundings a variiety of
         mental health issues,without any judgement or shame.From raising a child
         with OCD to explaining what it's like to experience halucinnations, this
         blog covers it all. NAMI also oofers readers the chance to "ask the
         expert any burning questions that haven't already been tackled.
-      </p>
+      </p><img src="img1.jpg"></div>
       <h2>4.Tiny Buddha(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+        <img src="img1.jpg" class="pic">
+      <p class="box">
         This blog shares a variety of articles on "simple wisdom for complex
         lives," but their <b>mindfulness and peace</b>section stands out for its
         practical tips to leading a calmer,more intentional life. Here you can
         gain meditation tips to calm anxiety,learns ways to deepen your
         connection to nature and more. If it's simple living and a clear mind
         you're after,Tiny Buddha is a great place to start.
-      </p>
+      </p></div>
       <h2>5.Zen Habits(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+      <p class="box">
         Blogger Leo Babuta has been sharing his mindfulness journey on<b
           >Zen Habits </b
         >since 2007.In more than a decade of blogging,he's covered nearly every
@@ -287,27 +323,32 @@
         death,overcoming fear,cultivating creativity-- and that's just a small
         sample.Zen Habits offers relatable life lessons without being preachy.
         Start here if your wellness journey includes a simplified life.
-      </p>
+      </p><img src="img1.jpg"></div>
       <h2>Healthy living</h2>
       <h2>1.Avocadu(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+        <img src="img1.jpg" class="pic">
+      <p class="box">
         "Healthy living from the inside out"is the motto
         of<b>Avocadu</b>founders Lauren and Alex.The pair teamed up to create
         their own wellness friends blindly follow confusing fad diets.At
         Avocadu,you'll find daily habits to help you live healthier,recipes and
         food guides to nourish your body and workout videos to help you meet
         your goals.
-      </p>
+      </p></div>
       <h2>2.Well+Good(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+      <p class="box">
         Alexia Brue and Melisse Geula are co-founders of <b>Well+Good</b>They
         launched the company as a premiere lifestyle and news publication
         dedicated to the wellness scene.The blog keeps up with trend-spotting on
         the healthy living beat while reporting on modern nutrition,natural
         beauty,bputique fitness and more.
-      </p>
+      </p><img src="img1.jpg"></div>
       <h2>3.mindbodygreen(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+        <img src="img1.jpg" class="pic">
+      <p class="box">
         With a vision to revitalize the way people eat, move and live,<b
           >mindbodygreen</b
         >
@@ -315,48 +356,61 @@
         fitness to stress and reationships.This is your one-stop shop for al
         things wellness,and you won't get bored browsing the clever articles
         recipes tips and tricks.
-      </p>
+      </p></div>
       <h2>4.MyFitnessPal blog</h2>
-      <p>
+      <div class="arr">
+      <p class="box">
         This blog companion to the popular fitness app of the same name features
         a little bit of everything related to healthy living. Head to the
         <b>MyFitness Pal blog</b>for clean-eting recipes,at home workouts
         designed by world-class athletes like Lindsay Vonn,answers to common
         question and more.
-      </p>
+      </p><img src="img1.jpg"></div>
       <h2>5.Furthermore by Equinox</h2>
-        <p>Crisp,beautiful design and a host of helpful conversations on fitness and welness are what you'l find on this blog. The folks at <b>Equinox</b>believe the body is the ultimate investment,which they love providing inspiration and information in an elevated way to help you reach your healthy living goals.</p>
+      <div class="arr">
+        <img src="img1.jpg" class="pic">
+        <p class="box">Crisp,beautiful design and a host of helpful conversations on fitness and welness are what you'l find on this blog. The folks at <b>Equinox</b>believe the body is the ultimate investment,which they love providing inspiration and information in an elevated way to help you reach your healthy living goals.</p>
+        
+      </div>
       <h2>Wellness news</h2>
       <h2>1.NPR Shots(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+      <p class="box">
         The health news division of <b>NPR Shots</b>will keep you in the know
         about everthing from epidemics and public health concerns to the latest
         news about the insurance industry industry.You'll always be on top of
         current events in the wellness space if you follow this blog.
-      </p>
+      </p><img src="img1.jpg">
+    </div>
       <h2>2.Everyday Health(Why Follow?)</h2>
-      <p>
+      <div class="arr">
+        <img src="img1.jpg">
+      <p class="box">
         <b>Everyday heath</b>covers health from A to Z --literally!.This
         comprehensive site is a go -to resources for a wide range of symptoms
         and illnesses,as well as the latest news on developments in healthcare
         and breakthroughs in diseases. But the fu osen't stop there.Everday
         Helth also offers rticles on mental and it's easy to see that site has
         somethings for everuone.
-      </p>
+      </p></div>
       <h2>3.Well by the New York Times</h2>
-      <p>Writers contribute to this blog with all sorts of articles on interesting subjects regarding healthy living. "Can You Be but Fit?" and "Turning Your Smartphone into a Breayhalyzer" are just samplings of the informative and entertaining articles found on the <b>Well blog </b>.The blog also features "Ask" articles which answer health-relayted question submitted by readers themselves.</p>
+      <div class="arr">
+      <p class="box">Writers contribute to this blog with all sorts of articles on interesting subjects regarding healthy living. "Can You Be but Fit?" and "Turning Your Smartphone into a Breayhalyzer" are just samplings of the informative and entertaining articles found on the <b>Well blog </b>.The blog also features "Ask" articles which answer health-relayted question submitted by readers themselves.</p><img src="img1.jpg"></div>
       <h2>4.Healthy Living by HuffPost</h2>
-      <p>You've surely heard of the Huffington Post,and their <b>Healthy Living blog </b>lives up to its name.Not only do articles cover tips and tricks for your own health and weness in all areas, but they also give helpful advice on how to assist friends and family in achieving a healthy lifestyles.If you're looking for a slightly more newsy or political tale on wellness topics,this is your go-to website.</p>
+      <div class="arr">
+        <img src="img1.jpg">
+      <p class="box">You've surely heard of the Huffington Post,and their <b>Healthy Living blog </b>lives up to its name.Not only do articles cover tips and tricks for your own health and weness in all areas, but they also give helpful advice on how to assist friends and family in achieving a healthy lifestyles.If you're looking for a slightly more newsy or political tale on wellness topics,this is your go-to website.</p></div>
       <h2>5.Healthline</h2>
-      <p>This health-centered media site presents the latest wellness news in a way that's actualy useful for everday people.No need to be a high-performing athlete or a medical professional to get the most from these articles!<b>Healthline</b>features timely,practical news articles like the proper way to wear a face mask,how to set up a versatile home gym and the best time of day to drink coffee without compromising your sleep. </p>
+      <div class="arr">
+      <p class="box">This health-centered media site presents the latest wellness news in a way that's actualy useful for everday people.No need to be a high-performing athlete or a medical professional to get the most from these articles!<b>Healthline</b>features timely,practical news articles like the proper way to wear a face mask,how to set up a versatile home gym and the best time of day to drink coffee without compromising your sleep. </p><img src="img1.jpg"></div>
       <h2>Ready to inspire healthy living</h2>
-      <p>
+      <p class="box">
         With this list of blogs ,you are now well-wquipped to elevate your
         healthy lifestyle to the next level.You might even consider learning
         more about how you can expand your reach and promote these initiatives
-        at a broader level as a community health professional.Sound
-        interesting?Learn more in our article,<b>
-          What is it really being a Community Healt Worker?"</b
+        at a broader level as a community health professional.<br>Sound
+        interesting?Learn more in our article<br><b>
+          What is it really being a Community Healt Worker?</b
         >
       </p>
     </div>
